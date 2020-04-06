@@ -50,6 +50,10 @@ console.log(panda.getPandaHeaders(headers));
 History Log
 =============
     
+- 1.1.0 -- 2020-04-06
+
+    - fix missing jsx dependency
+    
 - 1.0.0 -- 2020-04-06
 
     - initial commit 
