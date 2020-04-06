@@ -49,4 +49,4 @@ var pandaHeaders = {
 };
 
 
-modules.exports = pandaHeaders;
+module.exports = pandaHeaders;
