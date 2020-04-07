@@ -1,6 +1,6 @@
 Panda headers (js client)
 ===========
-2020-04-06
+2020-04-06 -> 2020-04-07
 
 A js helper to implement the [panda headers](https://github.com/lingtalfi/TheBar/blob/master/discussions/panda-headers-protocol.md) protocol.
 
@@ -29,7 +29,8 @@ panda_tags: judo, karate, 1__panda_comma__2__panda_comma__3__panda_comma__ solei
 ```
 
 
-Then we can use the helper like this:
+
+If you are using the **fetch** api, then we can use the helper like this:
 
 ```js
 const panda = require("panda-headers");
@@ -45,10 +46,19 @@ console.log(panda.getPandaHeaders(headers));
 ```
 
 
+Otherwise if you are using the **XMLHttpRequest** object, you can use the **getPandaHeadersByXMLHttpRequest** method
+which accepts the (xmlhttp) request as its argument and will yield equivalent results.
+
+
+
 
 
 History Log
 =============
+    
+- 1.3.0 -- 2020-04-07
+
+    - add getPandaHeadersByXMLHttpRequest function
     
 - 1.2.0 -- 2020-04-06
 
